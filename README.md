@@ -5,7 +5,8 @@ Problem Statement: Consider a Room Cleaner Robot which cleans a room containing 
 (b) Implement an agent which at each time instant 𝑡 observes its position  a𝑡=(𝑥𝑡,𝑦𝑡) (but not the dirt information in this location) and performs a random action  𝑎𝑡∈{𝑢𝑝,𝑑𝑜𝑤𝑛,𝑟𝑖𝑔ℎ𝑡,𝑙𝑒𝑓𝑡,𝑝𝑖𝑐𝑘𝐷𝑖𝑟𝑡}. On hitting a wall or picking dirt from the current location  (𝑥𝑡,𝑦𝑡), the agent stays in the same position  (𝑥𝑡,𝑦𝑡), otherwise, its position changes according to the action. Every action is associated with a reward (or penalty) defined as follows.
 rt = R((xt, yt), at) = (Reward)
     −1, if the agent tries to pick dirt and (xt, yt) is a clean cell
-    −10, if the agent hits a wall d, if (xt, yt) has d units of dirt and the agent picks it
+    −10, if the agent hits a wall 
+    d, if (xt, yt) has d units of dirt and the agent picks it
     0, otherwise
 
 (c) Print out the activity at each time instant t for t = 1, . . . , 1000. That is, for each t, display the grid (with dirt values in each cell), the location of the agent, the action of the agent and the reward obtained.
